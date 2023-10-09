@@ -33,6 +33,7 @@ main {
 footer {
   position: absolute;
   bottom: 0;
+  color: var(--clr-primary-100);
 }
 
 /* Main card styling */
