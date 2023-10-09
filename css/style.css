@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --clr-primary-100: hsl(179, 62%, 43%);
+  --clr-primary-200: hsl(71, 73%, 54%);
+  --clr-neutral-100: hsl(204, 43%, 93%);
+  --clr-neutral-200: hsl(218, 22%, 67%);
+}
+
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla";
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-neutral-100);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main card styling */
+.price-card {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+  max-width: 635px;
+  min-width: 325px;
+  border-radius: 0.75rem;
+}
+
+.community {
+  height: 27%;
+  min-height: 216px;
+  padding: 3rem 2.5rem;
+  background: white;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--clr-primary-100);
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+p#guarantee {
+  font-size: 1.115rem;
+  font-weight: 700;
+  color: var(--clr-primary-200);
+  margin-bottom: 1rem;
+}
+
+.community p {
+  color: var(--clr-neutral-200);
+  line-height: 1.5rem;
+}
+
+.sign-up {
+  display: flex;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.sign-up > * {
+  flex: 1;
+  padding: 2.5rem;
+}
+
+.offer {
+  background: var(--clr-primary-100);
+  border-radius: 0 0 0 0.75rem;
+}
+
+.benefits {
+  background: hsla(179, 62%, 43%, 0.8);
+}
+
+.benefits ul {
+  list-style: none;
+}
+
+.subscription span.price {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 0.75rem;
+}
+
+.sign-up .subscription {
+  color: var(--clr-neutral-100);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up p {
+  color: white;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  margin: 0 auto;
+  color: white;
+  font-weight: 700;
+  background: var(--clr-primary-200);
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 1.75rem;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.benefits {
+  border-radius: 0 0 0.75rem 0;
+}
+
+.benefits ul li {
+  color: var(--clr-neutral-100);
+  margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .price-card {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .price-card {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .price-card {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .price-card {
+    border-radius: 0.5rem;
+    width: 65%;
+  }
+  .community {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1.75rem 1.25rem;
+  }
+  .community p {
+    font-size: 0.9rem;
+  }
+  .sign-up {
+    flex-direction: column;
+  }
+  .sign-up > * {
+    padding: 1.25rem;
+  }
+  .offer {
+    border-radius: 0;
+  }
+  button {
+    border-radius: 0.25rem;
+  }
+  .benefits {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  .benefits ul li {
+    font-size: 0.9rem;
+  }
+}
